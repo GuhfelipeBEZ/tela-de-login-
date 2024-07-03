@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: #00ff22;
+    background: linear-gradient(to right, #ea00ff00, #00ff22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.container {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.container span {
+    font-size: 14px;
+}
+.container a {
+    color: #a200ff;
+    font-size: 13px;
+    text-decoration: none; /* text-decoration remove os anderline dos texto  */
+    margin: 15px 0 10px;
+}
+.container button {
+    background: rgb(111, 0, 255);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hedden {
+    background: transparent;
+    border-color: white;
+}
+.container form {
+    background: rgb(204, 199, 199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.container input {
+    background: white;
+    border: 0;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6 ease-in-out;
+}
+.sing-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+
+@keyframes backgroundAnimation {
+    0%{
+        background-position: 100% 0%;
+    }
+
+    
+}
